@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Biglietto Treno Form</title>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <main>
+      <h1 class="text-center my-3">Calcola il prezzo del tuo biglietto!</h1>
+      <div class="container">
+         <div class="row">
+            <div class="col-4">
+               <div class="my-input">
+                  <label for="nameInput">
+                     Inserisci il tuo nome
+                  </label>
+                  <input type="text" name="nameInput">
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="my-input">
+                  <label for="ageInput">
+                     Inserisci la tua età
+                  </label>
+                  <input type="text" name="ageInput">
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="my-input">
+                  <label for="kmInput">
+                     Inserisci i chilometri da percorrere
+                  </label>
+                  <input type="text" name="kmInput">
+               </div>
+            </div>
+         </div>
+         <div class="my-input">
+            <label for="discountSelect">
+               Seleziona lo sconto da applicare
+            </label>
+            <select name="discountSelect" id="discount">
+               <option value="">Seleziona Opzione</option>
+               <option value="0.8">Under 18</option>
+               <option value="0.6">Over 65</option>
+            </select>
+         </div>
+         <div class="row">
+            <div class="col text-center">
+               <button class="btn btn-primary" id="buyBtn">Generate</button>
+               <button class="btn btn-danger" id="deleteBtn">Delete</button>
+            </div>
+         </div>
+      </div>
+      <h2 class="text-center my-3">
+         Il tuo biglietto
+      </h2>
+      <div class="container bg-light">
+         <p>Nome passeggero: <span id="nameDisplay"></span></p>
+         <p>Km da percorrere: <span id="kmDisplay"></span></p>
+         <p>Totale: <span id="totalDisplay"></span></p>
+      </div>
+   </main>
+
+   <script src="js/main.js"></script>
+</body>
+
+</html>
