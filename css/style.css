@@ -1,5 +1,5 @@
 body {
-	background: lightgreen;
+	background: #5d995d;
 }
 
 .my-input {
@@ -7,6 +7,33 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: 1rem 0;
+	margin-bottom: 1rem;
 	gap: 1rem;
+
+	font-weight: bold;
+}
+
+.bg-clr-light {
+	background-color: lightgreen;
+	padding: 1rem;
+	border-radius: 10px;
+}
+
+select,
+input {
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.ticket-title {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.name-section {
+	border-right: 2px solid black;
+}
+
+.font-25 {
+	font-size: 25px;
 }

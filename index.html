@@ -14,7 +14,7 @@
 <body>
    <main>
       <h1 class="text-center my-3">Calcola il prezzo del tuo biglietto!</h1>
-      <div class="container">
+      <div class="container bg-clr-light">
          <div class="row">
             <div class="col-4">
                <div class="my-input">
@@ -46,9 +46,9 @@
                Seleziona lo sconto da applicare
             </label>
             <select name="discountSelect" id="discount">
-               <option value="">Seleziona Opzione</option>
-               <option value="0.8">Under 18</option>
-               <option value="0.6">Over 65</option>
+               <option value="">Tariffa Base (0.21 &euro; /km)</option>
+               <option value="0.8">Under 18 (-20%)</option>
+               <option value="0.6">Over 65 (-40%)</option>
             </select>
          </div>
          <div class="row">
@@ -61,10 +61,34 @@
       <h2 class="text-center my-3">
          Il tuo biglietto
       </h2>
-      <div class="container bg-light">
-         <p>Nome passeggero: <span id="nameDisplay"></span></p>
-         <p>Km da percorrere: <span id="kmDisplay"></span></p>
-         <p>Totale: <span id="totalDisplay"></span></p>
+      <div class="container bg-clr-light">
+         <div class="row">
+            <div class="col-4 name-section">
+               <p class="ticket-title">Nome passeggero:
+               <p class="display-6" id="nameDisplay"></p>
+               </p>
+            </div>
+            <div class="col">
+               <p class="ticket-title">Tariffa:
+               <p class="font-25" id="discountDisplay"></p>
+               </p>
+            </div>
+            <div class="col">
+               <p class="ticket-title">Nr. Carta Cliente:
+               <p class="font-25" id="cardNumberDisplay"></p>
+               </p>
+            </div>
+            <div class="col">
+               <p class="ticket-title">Posto assegnato:
+               <p class="font-25" id="seatDisplay"></p>
+               </p>
+            </div>
+            <div class="col">
+               <p class="ticket-title">Totale:
+               <p class="font-25" id="totalDisplay"></p>
+               </p>
+            </div>
+         </div>
       </div>
    </main>
 
